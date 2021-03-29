@@ -1,6 +1,10 @@
 {
-  "type": "sqlite",
-  "database": "./src/database/database.sqlite",
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "database": "nps",
+  "username": "docker",
+  "password": "postgres",
   "migrations": ["./src/database/migrations/**.ts"],
   "entities": ["./src/models/**.ts"],
   "cli": {
